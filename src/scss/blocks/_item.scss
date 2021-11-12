@@ -1,0 +1,31 @@
+.item {
+    margin: 17rem 0 0 0;
+    .iteam__text {
+        color: $white;
+        font-size: 5.5rem;
+        font-weight: 900;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 2.7rem;
+    }
+    .item__seconText {
+        color: $grayText;
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin: 0 0 7.1rem;
+        text-align: center;
+    }
+}
+
+.iten__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.item__img {
+    display: flex;
+    justify-content: center;
+    .item__imgPag {
+        margin: 0 0 8.5rem;
+    }
+}

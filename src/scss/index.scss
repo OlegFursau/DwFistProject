@@ -8,6 +8,9 @@
 @import 'blocks/header.scss';
 @import 'blocks/container.scss';
 @import 'blocks/btn.scss';
+@import 'blocks/item';
+@import 'blocks/feature';
+@import 'blocks/content';
 html {
     font-size: 10px;
 }
@@ -21,4 +24,21 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background: $white;
+    color: $fistText;
+}
+
+ul {
+    list-style: none;
+}
+
+.link {
+    color: $secondary;
+    font-size: 1.5rem;
+    text-decoration: none;
+    line-height: 1.8;
+    &:hover {
+        text-decoration: underline;
+        transition: .1s linear;
+        cursor: pointer;
+    }
 }
