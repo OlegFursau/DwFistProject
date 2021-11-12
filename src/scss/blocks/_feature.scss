@@ -20,6 +20,14 @@
         border-radius: 10px;
         box-shadow: 0 0 10px gray;
         padding-bottom: 5rem;
+        &:hover {
+            color: $white;
+            background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
+            transition: .2s linear;
+            svg {
+                fill: $white;
+            }
+        }
     }
 }
 
@@ -56,4 +64,8 @@
 .feature__link {
     padding: 0 6rem 5rem;
     margin-bottom: 5rem;
+    &:hover {
+        color: $white;
+        transition: .1s liner;
+    }
 }

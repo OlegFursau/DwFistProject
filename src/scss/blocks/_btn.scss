@@ -46,3 +46,14 @@
 .btn__blue+.btn__blue {
     margin-left: 2.2rem;
 }
+
+.buttom__blue {
+    background-color: $secondary;
+    color: $white;
+    &:hover {
+        background-color: blue;
+        transition: .4s linear;
+        box-shadow: 0 0 30px $secondary;
+        border-radius: 30px;
+    }
+}
