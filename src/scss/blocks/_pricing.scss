@@ -1,0 +1,92 @@
+.Pricing {
+    &::after {
+        content: "";
+        background: #CDCDCD;
+        height: 1px;
+    }
+}
+
+.pricing__inner {
+    font-size: 4.6rem;
+    font-weight: 500;
+    color: $fistText;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 10.1rem;
+}
+
+.pricing__subscrube {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $secondaryText;
+    text-align: center;
+    margin: 3rem 0 6.3rem 0;
+}
+
+.pricing__block {
+    display: flex;
+    .pricing__blocks {
+        width: 30%;
+        border: 1px solid $borderColor;
+        border-radius: 10px;
+    }
+}
+
+
+/*blocks*/
+
+.pricing__title {
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: $fistText;
+    padding-top: 5rem;
+    text-align: center;
+    margin: 0;
+}
+
+.pricing__subTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $secondaryText;
+    line-height: 1.2;
+    margin: 0;
+    text-align: center;
+    padding: 1rem 0 3rem;
+}
+
+.pricing__image {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.pricing__price {
+    display: flex;
+    justify-content: center
+}
+
+.pricing__number {
+    font-size: 5.5rem;
+    line-height: 1.8;
+    font-weight: 900;
+    color: $primecy;
+    margin: 0;
+}
+
+.pricing__bill {
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: $primecy;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.pricing__unit {
+    color: $fistText;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0;
+}
