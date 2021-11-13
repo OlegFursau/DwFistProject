@@ -1,20 +1,23 @@
 .item {
     margin: 17rem 0 0 0;
-    .iteam__text {
-        color: $white;
-        font-size: 5.5rem;
-        font-weight: 900;
-        line-height: 1.2;
-        text-align: center;
-        margin-bottom: 2.7rem;
-    }
-    .item__seconText {
-        color: $grayText;
-        font-size: 1.6rem;
-        font-weight: 700;
-        margin: 0 0 7.1rem;
-        text-align: center;
-    }
+}
+
+.iteam__text {
+    color: $white;
+    font-size: 5.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+    text-align: center;
+    max-width: 63rem;
+    margin: 2.7rem auto;
+}
+
+.item__seconText {
+    color: $grayText;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0 0 7.1rem;
+    text-align: center;
 }
 
 .iten__btn {
@@ -25,7 +28,75 @@
 .item__img {
     display: flex;
     justify-content: center;
+    max-width: 1022px;
+    margin: 0 auto;
     .item__imgPag {
         margin: 0 0 8.5rem;
+        //width: 100%;
+    }
+}
+
+.header__burger {
+    display: none;
+    margin: .5rem 2.7rem 0 0;
+}
+
+.header__burger:hover .header__burgerSvg {
+    fill: $secondary;
+    transform: rotateX(180deg);
+    transition: .5s linear;
+}
+
+
+/*----Media-----*/
+
+@media (max-width: 1092px) {
+    .header__list {
+        display: none;
+    }
+    .header__burger {
+        display: block;
+    }
+    .item__imgPag {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__list {
+        display: none;
+    }
+    .header__burger {
+        display: block;
+    }
+}
+
+@media (max-width: 523px) {
+    .iteam__text {
+        max-width: 307px;
+        margin: 2.7rem auto;
+    }
+    .item__seconText {
+        max-width: 334px;
+        margin: 0 auto 7rem;
+    }
+    .iten__btn {
+        flex-wrap: wrap;
+        padding: 0 10rem;
+        margin-bottom: 1.5rem;
+    }
+    .btn__item+.btn__item {
+        margin: 0;
+    }
+    .btn__item {
+        border-radius: 30px;
+        padding: 1.5rem 8rem;
+        margin-bottom: 1.5rem;
+    }
+    .header__list {
+        display: none;
+    }
+    .header__burger {
+        display: block;
     }
 }

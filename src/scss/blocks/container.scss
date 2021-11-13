@@ -18,3 +18,17 @@
     padding: 1rem 0;
     ;
 }
+
+.container__feature {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+@media (man-width: 526px) {
+    .container__feature {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
