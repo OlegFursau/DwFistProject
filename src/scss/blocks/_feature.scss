@@ -14,20 +14,18 @@
     display: flex;
     justify-content: center;
     padding: 6rem;
-    .feature__box {
-        width: 30%;
-        border: 1px solid rgba(128, 128, 128, 0.527);
-        border-radius: 10px;
-        box-shadow: 0 0 10px gray;
-        padding-bottom: 5rem;
-        &:hover {
-            color: $white;
-            background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
-            transition: .2s linear;
-            svg {
-                fill: $white;
-            }
-        }
+}
+
+.feature__box {
+    width: 30%;
+    display: block;
+    border: 1px solid rgba(128, 128, 128, 0.527);
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    padding-bottom: 5rem;
+    &:hover {
+        background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
+        transition: .2s linear;
     }
 }
 
@@ -68,4 +66,8 @@
         color: $white;
         transition: .1s liner;
     }
+}
+
+.feature__img:hover #icon1 {
+    fill: white;
 }
