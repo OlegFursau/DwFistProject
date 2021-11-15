@@ -38,6 +38,7 @@
     &:hover {
         color: $white;
         background-color: $secondary;
+        box-shadow: 0 0 30px $secondary;
         transition: .1s linear;
     }
 }

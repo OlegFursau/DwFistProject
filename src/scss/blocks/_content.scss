@@ -1,46 +1,106 @@
-.content__block {
-    width: 50%;
-}
-
-.content__item {
-    font-size: 4.6rem;
-    font-weight: 500;
-    line-height: 1.2;
-    padding: 23.2rem 0 0;
-    margin: 0;
-}
-
-.content__diescrube {
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.2;
-    color: $secondaryText;
-    margin: 4.6rem 0;
-    padding-right: 8rem;
-}
-
-.content__logo {
-    padding: 11rem 0 0;
-    margin-left: 3rem;
-    margin-bottom: 11rem;
-}
-
-
-/*middle block*/
-
-.content_conteiner {
-    flex-direction: row-reverse;
-}
-
-.content__logoRight {
-    margin-right: 2.2rem;
-    padding-top: 6.5rem;
-}
-
-.content__right {
-    padding: 23.2rem 0 0 8rem;
-}
-
-.content__textRight {
-    padding-left: 8rem;
-}
+                        .content {
+                            max-width: 1583px;
+                            margin: 0 auto;
+                        }
+                        
+                        .content__container {
+                            max-width: 1290px;
+                            margin: 5.1rem auto 0;
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            padding: 0 4rem;
+                            gap: 3rem;
+                        }
+                        
+                        .content__block {
+                            padding: .5rem;
+                            align-self: center;
+                        }
+                        
+                        .content__item {
+                            width: 49rem;
+                            font-size: 4.6rem;
+                            font-weight: 500;
+                            line-height: 1.2;
+                            margin: 0;
+                        }
+                        
+                        .content__diescrube {
+                            width: 48rem;
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                            line-height: 1.2;
+                            color: $secondaryText;
+                            margin: 4.6rem 0;
+                            padding-right: 8rem;
+                        }
+                        
+                        .content_down {
+                            padding: 0;
+                            width: 52.4rem;
+                        }
+                        
+                        .content__secrit {
+                            display: none;
+                        }
+                        
+                        .content__secbtn {
+                            display: none;
+                        }
+                        
+                        .content__link {
+                            display: none;
+                        }
+                        
+                        @media (max-width: 1092px) {
+                            .content__logo {
+                                max-width: 100%;
+                            }
+                            .content__block {
+                                padding: 0 3rem;
+                            }
+                        }
+                        
+                        @media (max-width: 700px) {
+                            .content__container {
+                                column-gap: 3rem;
+                                grid-template-columns: minmax(50%, 1fr);
+                                grid-template-rows: repeat(3, 1fr);
+                                margin-top: 0;
+                            }
+                            .content__item {
+                                max-width: 100%;
+                            }
+                            .content_blocks {
+                                display: none;
+                            }
+                            .content__diescrube {
+                                max-width: 100%;
+                            }
+                            .content__link {
+                                display: block;
+                                text-decoration: none;
+                                font-size: 1.5rem;
+                                color: $fistText;
+                                line-height: 1.8;
+                                letter-spacing: 0.2px;
+                            }
+                            .content__btn {
+                                display: none;
+                            }
+                            .content__secbtn {
+                                display: flex;
+                                flex-direction: column;
+                                margin: 0;
+                                text-align: center;
+                            }
+                            .content__secrit {
+                                display: block;
+                            }
+                            .content__sec {
+                                margin: 2.2rem 0;
+                            }
+                            .content__sec+.content__sec {
+                                margin: 0
+                            }
+                        }
