@@ -3,6 +3,12 @@
     margin: 17rem auto;
 }
 
+.item__grid {
+    display: grid;
+    grid-template-rows: 17.8rem 5.2rem 60.8rem;
+    gap: 10rem;
+}
+
 .iteam__text {
     color: $white;
     font-size: 5.5rem;
@@ -72,7 +78,12 @@
     }
 }
 
-@media (max-width: 523px) {
+@media (max-width: 530px) {
+    .item__grid {
+        grid-template-rows: minmax(50%, 1fr);
+        gap: 0;
+        padding: 0 1rem;
+    }
     .iteam__text {
         max-width: 307px;
         margin: 2.7rem auto;
@@ -83,7 +94,6 @@
     }
     .iten__btn {
         flex-wrap: wrap;
-        padding: 0 10rem;
         margin-bottom: 1.5rem;
     }
     .btn__item+.btn__item {
@@ -99,5 +109,6 @@
     }
     .header__burger {
         display: block;
+        margin: 0;
     }
 }

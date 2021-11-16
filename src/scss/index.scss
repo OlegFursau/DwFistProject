@@ -14,6 +14,8 @@
 @import 'blocks/down';
 @import 'blocks/cta';
 @import 'blocks/pricing';
+@import 'blocks/subscribe.scss';
+@import 'blocks/footer.scss';
 html {
     font-size: 10px;
 }
@@ -33,6 +35,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: $fistText;
     margin: 0;
+    letter-spacing: 0.2p;
 }
 
 ul {

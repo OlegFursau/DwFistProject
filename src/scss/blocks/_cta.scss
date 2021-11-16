@@ -1,39 +1,87 @@
-.cta__content {
-    max-width: 1538px;
-    margin: 0 auto;
-    display: flex;
-    .cta__intro {
-        width: 37%;
-        .content__DbImg {
-            width: 63%;
-        }
-    }
+.cta {
+    max-width: 1300px;
+    margin: 22rem auto 17rem;
+    padding: 0 2.5rem;
 }
 
-.cta__inner {
-    font-size: 4.6rem;
-    font-weight: 500;
-    line-height: 1.2;
-    color: $fistText;
-    padding: 29rem 11rem 0 3rem;
-}
-
-.cta__descrube {
-    padding: 0 18rem 3.4rem 3rem;
-    color: $secondaryText;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.2;
-}
-
-.cta__bottom {
-    padding-left: 3rem;
-    .cta__Btn {
-        margin-left: .7rem;
-    }
+.cta__grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 3.5rem;
 }
 
 .cta__img {
-    margin: 10rem 0 7rem 5rem;
-    padding-top: 10rem;
+    max-width: 100%;
+}
+
+.cta__left {
+    align-self: center;
+}
+
+.cta__item {
+    max-width: 37.4rem;
+    height: auto;
+    color: $fistText;
+    font-size: 4.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    margin-bottom: 4.7rem;
+}
+
+.cta__title {
+    max-width: 30.1rem;
+    color: $secondaryText;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+
+.cta__btn {
+    margin: 3.7rem 0;
+}
+
+.cta__bottom+.cta__bottom {
+    margin-left: .7rem;
+}
+
+.cta__link {
+    display: none;
+}
+
+@media(max-width:1092px) {
+    .cta__btn {
+        display: flex;
+        flex-direction: column;
+    }
+    .cta__bottom+.cta__bottom {
+        margin: 0;
+    }
+    .cta__bottom {
+        margin: 1.3rem 0;
+        text-align: center;
+    }
+}
+
+@media (max-width:700px) {
+    .cta {
+        margin: 16rem auto;
+    }
+    .cta__btn {
+        display: none;
+    }
+    .cta__grid {
+        grid-template-columns: minmax(50%, 1fr);
+    }
+    .cta__link {
+        display: flex;
+        flex-direction: column;
+    }
+    .cta__btnlink+.cta__btnlink {
+        margin: 0;
+    }
+    .cta__btnlink {
+        margin: 1.3rem 0;
+        text-align: center;
+    }
 }

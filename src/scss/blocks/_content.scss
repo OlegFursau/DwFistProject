@@ -52,6 +52,12 @@
                             display: none;
                         }
                         
+                        .container__footer {
+                            max-width: 113rem;
+                            margin: 6.2rem auto;
+                        }
+                        /*media*/
+                        
                         @media (max-width: 1092px) {
                             .content__logo {
                                 max-width: 100%;
@@ -65,8 +71,7 @@
                             .content__container {
                                 column-gap: 3rem;
                                 grid-template-columns: minmax(50%, 1fr);
-                                grid-template-rows: repeat(3, 1fr);
-                                margin-top: 0;
+                                margin-top: 5.8rem;
                             }
                             .content__item {
                                 max-width: 100%;

@@ -122,6 +122,9 @@
         grid-template-rows: repeat(3, 1fr);
         place-items: center;
     }
+    .down__grid {
+        margin: 9.5rem auto;
+    }
     .down__item {
         max-width: 32.6rem;
         margin: 10rem auto;

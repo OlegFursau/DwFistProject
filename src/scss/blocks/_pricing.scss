@@ -1,92 +1,156 @@
-.Pricing {
-    &::after {
-        content: "";
-        background: #CDCDCD;
-        height: 1px;
-    }
-}
-
-.pricing__inner {
-    font-size: 4.6rem;
-    font-weight: 500;
-    color: $fistText;
-    line-height: 1.2;
-    text-align: center;
-    margin-top: 10.1rem;
-}
-
-.pricing__subscrube {
-    font-size: 1.8rem;
-    font-weight: 400;
-    color: $secondaryText;
-    text-align: center;
-    margin: 3rem 0 6.3rem 0;
-}
-
-.pricing__block {
-    display: flex;
-    .pricing__blocks {
-        width: 30%;
-        border: 1px solid $borderColor;
-        border-radius: 10px;
-    }
-}
-
-
-/*blocks*/
-
-.pricing__title {
-    font-size: 3rem;
-    line-height: 1.1;
-    font-weight: 700;
-    color: $fistText;
-    padding-top: 5rem;
-    text-align: center;
-    margin: 0;
-}
-
-.pricing__subTitle {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: $secondaryText;
-    line-height: 1.2;
-    margin: 0;
-    text-align: center;
-    padding: 1rem 0 3rem;
-}
-
-.pricing__image {
-    display: flex;
-    justify-content: center;
-    margin: 3rem 0;
-}
-
-.pricing__price {
-    display: flex;
-    justify-content: center
-}
-
-.pricing__number {
-    font-size: 5.5rem;
-    line-height: 1.8;
-    font-weight: 900;
-    color: $primecy;
-    margin: 0;
-}
-
-.pricing__bill {
-    font-size: 3rem;
-    line-height: 1.1;
-    font-weight: 700;
-    color: $primecy;
-    align-items: flex-start;
-    margin: 0;
-}
-
-.pricing__unit {
-    color: $fistText;
-    font-size: 1.2rem;
-    line-height: 1.2;
-    font-weight: 700;
-    margin: 0;
-}
+                .pricing {
+                    max-width: 1121px;
+                    margin: 0 auto;
+                }
+                
+                .pricing__text {
+                    max-width: 68.6rem;
+                    margin: 0 auto;
+                    text-align: center;
+                    margin-bottom: 6.3rem;
+                }
+                
+                .pricing__item {
+                    font-size: 4.6rem;
+                    line-height: 1.2;
+                    color: $fistText;
+                }
+                
+                .pricing__subtitle {
+                    color: $secondaryText;
+                    font-size: 1.8rem;
+                    line-height: 1.5;
+                    margin-top: 3rem;
+                }
+                
+                .pricing__grid {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 3rem;
+                    margin: 0 auto;
+                }
+                
+                .pricing__block {
+                    border: 1px solid $borderColor;
+                    border-radius: 10px;
+                    padding: 5rem 3.8rem 4rem;
+                    text-align: center;
+                }
+                
+                .pricing__title {
+                    font-size: 3rem;
+                    line-height: 1.1;
+                    font-weight: 700;
+                    letter-spacing: 0.1px;
+                    color: $fistText;
+                    margin-bottom: 1rem;
+                }
+                
+                .pricing__subtext {
+                    font-size: 1.2rem;
+                    line-height: 1.5rem;
+                    color: $secondaryText;
+                    font-weight: 700;
+                    margin-bottom: 3rem;
+                }
+                
+                .pricing__img {
+                    max-width: 25.9rem;
+                    margin-bottom: 2.8rem;
+                }
+                
+                .pricing__btn {
+                    margin-top: 5.8rem;
+                }
+                
+                .pricing__bottom {
+                    background: $secondary;
+                    color: $white;
+                    &:hover {
+                        background: blue;
+                        transition: .2s linear;
+                    }
+                }
+                
+                .pricing_price {
+                    max-width: 15.1rem;
+                    margin: 0 auto 4.5rem;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    gap: .5rem .5rem;
+                    grid-template-areas: "total value . " "total data data";
+                }
+                
+                .pricing__total {
+                    font-size: 5.5rem;
+                    line-height: 1.2;
+                    font-weight: 900;
+                    color: #30D7BA;
+                    grid-area: total;
+                }
+                
+                .pricing__value {
+                    font-size: 3rem;
+                    font-weight: 700;
+                    line-height: 1.1;
+                    color: #30D7BA;
+                    grid-area: value;
+                }
+                
+                .pricing__data {
+                    font-size: 1.2rem;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    color: #5C5C5C;
+                    font-weight: 700;
+                    line-height: 1.5;
+                    grid-area: data;
+                }
+                
+                .pricing__discribe {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    color: $fistText;
+                    padding-bottom: 2rem;
+                }
+                
+                .pricing__line {
+                    max-width: 86.8rem;
+                    height: 1px;
+                    margin: 13.4rem auto 12.3rem;
+                    background: $borderColor;
+                }
+                /*---media----*/
+                
+                @media(max-width: 1092px) {
+                    .pricing__text {
+                        padding: 0 4rem;
+                    }
+                    .pricing__grid {
+                        grid-template-columns: minmax(335px, 550px);
+                        justify-content: center;
+                    }
+                    .pricing__btn {
+                        display: block;
+                    }
+                    .pricing__line {
+                        max-width: 63.5rem;
+                    }
+                }
+                
+                @media(max-width:700px) {
+                    .pricing__block {
+                        margin: 0 9.4rem;
+                        padding: 5rem 1.5rem 4rem;
+                    }
+                    .pricing__img {
+                        max-width: 100%;
+                    }
+                    .pricing__btn {
+                        text-align: center;
+                    }
+                    .pricing__line {
+                        max-width: 43.5rem;
+                    }
+                }
