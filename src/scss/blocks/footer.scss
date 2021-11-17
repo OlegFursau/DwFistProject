@@ -103,6 +103,9 @@
         margin: 0 auto;
     }
     .footer__img {
-        padding-left: 4rem;
+        padding-left: 2rem;
+    }
+    .footer__price+.footer__price {
+        padding: 0 4rem 0;
     }
 }
