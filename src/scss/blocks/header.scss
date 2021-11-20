@@ -10,8 +10,16 @@
                     text-align: center;
                 }
                 
+                .header__burger {
+                    margin: 0 1rem;
+                }
+                
                 .header__list {
                     list-style: none;
+                    display: flex;
+                }
+                
+                .header__block {
                     display: flex;
                 }
                 

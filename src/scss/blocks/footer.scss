@@ -5,7 +5,7 @@
 
 .footer__grid {
     display: grid;
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: repeat(3, 1fr);
     gap: 7rem;
 }
 

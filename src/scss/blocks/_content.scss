@@ -17,6 +17,10 @@
                             align-self: center;
                         }
                         
+                        .content__logo {
+                            max-width: 100%;
+                        }
+                        
                         .content__item {
                             width: 49rem;
                             font-size: 4.6rem;
@@ -59,11 +63,8 @@
                         /*media*/
                         
                         @media (max-width: 1092px) {
-                            .content__logo {
-                                max-width: 100%;
-                            }
                             .content__block {
-                                padding: 0 3rem;
+                                padding: 0 1rem;
                             }
                         }
                         
